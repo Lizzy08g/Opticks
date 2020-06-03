@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Actividades">
+        <menu>
+            <item
+                android:id="@+id/asignadas"
+                android:icon="@drawable/ic_actividades"
+                android:title="Actividades Asignadas" />
+            <item
+                android:id="@+id/finalizadas"
+                android:icon="@drawable/ic_finalizadas"
+                android:title="Actividades Finalizadas" />
+            <item
+                android:id="@+id/realizadas"
+                android:icon="@drawable/ic_finalizadas"
+                android:title="Actividades Realizadas" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/editar_usario"
+        android:title="Editar Usuario"
+        android:icon="@drawable/ic_user"/>
+    <item
+        android:id="@+id/desconectar"
+        android:title="Desconectar"
+        android:icon="@drawable/ic_desconectar"/>
+
+</menu>

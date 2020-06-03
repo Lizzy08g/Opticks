@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="604dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_marco"
+            android:text="DASHBOARD"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp">
+
+        </SearchView>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="382dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_bordes">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_bordes"
+                        android:text="TICKET"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_bordes"
+                        android:text="CLIENTE"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_bordes"
+                        android:text="DETALLES"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ticket_1"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/ic_bordes"
+                        android:text="TICKET"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cliente_1"
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/ic_bordes"
+                        android:text="CLIENTE"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_bordes">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <Button
+                                android:id="@+id/detalles1"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:background="#0425FA"
+                                android:drawableBottom="@drawable/ic_detalle" />
+                            <Button
+                                android:id="@+id/finalizar1"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:background="#5AC635"
+                                android:radius="5dp"
+                                android:drawableBottom="@drawable/ic_finalizar" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <Button
+                                android:id="@+id/comentarios1"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:background="#F6B52B"
+                                android:drawableBottom="@drawable/ic_comentarios" />
+
+                            <Button
+                                android:id="@+id/reportes1"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:background="#2BF6CE"
+                                android:drawableBottom="@drawable/ic_reportes" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ticket_2"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/ic_bordes"
+                        android:text="TICKET"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cliente_2"
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/ic_bordes"
+                        android:text="CLIENTE"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_bordes">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <Button
+                                android:id="@+id/detalles2"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:background="#0425FA"
+                                android:drawableBottom="@drawable/ic_detalle" />
+
+                            <Button
+                                android:id="@+id/finalizar2"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:background="#6BF04C"
+                                android:drawableBottom="@drawable/ic_finalizar" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <Button
+                                android:id="@+id/comentarios2"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:background="#F6B52B"
+                                android:drawableBottom="@drawable/ic_comentarios" />
+
+                            <Button
+                                android:id="@+id/reportes2"
+                                android:layout_width="50dp"
+                                android:layout_height="37dp"
+                                android:background="#2BF6CE"
+                                android:drawableBottom="@drawable/ic_reportes" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/refrescar"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_recargar"
+            android:text="Refrescar"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
